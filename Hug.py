@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 import asyncio
 
-bot = commands.Bot(command_prefix="=", description='Favelas')
+bot = commands.Bot(command_prefix="PREFIX", description='bot')
 
 
 @bot.event
@@ -30,3 +30,6 @@ async def hug(ctx, user: discord.User):
 
     hug_embed.set_image(url=hug_gif)
     await ctx.send(embed=hug_embed)
+
+    
+bot.run("TOKEN")
